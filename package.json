@@ -2,9 +2,10 @@
   "name": "major_project_backend",
   "version": "1.0.0",
   "description": "This Is An Major Backend Project.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "JavaScript",
