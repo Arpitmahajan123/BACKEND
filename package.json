@@ -1,0 +1,21 @@
+{
+  "name": "major_project_backend",
+  "version": "1.0.0",
+  "description": "This Is An Major Backend Project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "Backend",
+    "Logic"
+  ],
+  "author": "Arpit Mahajan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "node": "^22.13.0",
+    "nodemon": "^3.1.9"
+  }
+}
