@@ -39,13 +39,21 @@ const app = express()
 
 connectDB()
 
+.then(()=>{
+    app.listen(process.env.PORT || 8080, () => {
+        console.log(`Your App Is Running On Port Number ${process.env.PORT} !!!`);
+    });
+})
+.catch((error)=>{
+    console.error("Error: ", error);
+    
+})
 
 
+// app.listen(process.env.PORT, () => {
+//     console.log(`Your App Is Running On Port Number ${process.env.PORT}`);
 
-app.listen(process.env.PORT, () => {
-    console.log(`Your App Is Running On Port Number ${process.env.PORT}`);
-
-});
+// });
 
 
 
