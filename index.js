@@ -1,8 +1,14 @@
-require("dotenv").config()
+// This Is Not A Consistent Way To Write Like This "Require" And "Import" In The Same File.
+// require("dotenv").config({path: './env'})
+
+import dotenv from "dotenv"
+dotenv.config({path: './env'})
+
 import mongoose from "mongoose"
-import { DB_NAME } from "./constants";
+import { DB_NAME } from "./constants.js";
 import express from "express"
-import connectDB from "./db/index.db";
+import connectDB from "./db/index.db.js";
+import path from "path";
 const app = express()
 
 //=========================================================================
@@ -36,23 +42,8 @@ connectDB()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 app.listen(process.env.PORT, () => {
-    console.log(`Your App Is Running On Prit Number ${process.env.PORT}`);
+    console.log(`Your App Is Running On Port Number ${process.env.PORT}`);
 
 });
 
