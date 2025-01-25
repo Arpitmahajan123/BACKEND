@@ -1,6 +1,8 @@
+require("dotenv").config()
 import mongoose from "mongoose"
 import { DB_NAME } from "./constants";
 import express from "express"
+import connectDB from "./db/index.db";
 const app = express()
 
 //=========================================================================
@@ -27,7 +29,9 @@ const app = express()
 
 //=========================================================================
 // 2nd Approach
-// Using 
+// Using Connection.Instatce.connection.host()
+
+connectDB()
 
 
 
